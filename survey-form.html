@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="FreeCodeCamp challenge to improve HTML form skills">
+    <meta name="author" content="Genesis Mandela">
+    <!-- Title -->
+    <title>Genesis Mandela | HTML & CSS Project / Survey Form</title>
+    <!-- Style -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159180375-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-159180375-1');
+    </script>
+  </head>
+  <body>
+    <main class="wrapper">
+      <h1 id="title">Your next big adventure</h1>
+      <p id="description">After difficult times confined at home everybody wants to travel again, we know sometimes how difficult it is to choose a proper destination. Let us know your journey preferences and we will choose the most adequate place for you.</p>
+      <form action="" id="survey-form" class="form">
+        <div class="form__container">
+          <label for="name" id="name-label" class="form__label-text">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" class="form__insert-info" required>
+        </div>
+        <div class="form__container">
+          <label for="email" id="email-label" class="form__label-text">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required class="form__insert-info">
+        </div>
+        <div class="form__container">
+          <label for="number" id="number-label" class="form__label-text">Age</label>
+          <input type="number" id="number" name="number" placeholder="Enter your age" min="18" max="95" required class="form__insert-info">
+        </div>
+        <div class="form__container">
+          <label for="dropdown" class="form__label-text">Which continent you want to explore?</label>
+          <select name="dropdown" id="dropdown" class="form__insert-info">
+            <option value="africa">Africa</option>
+            <option value="america">America</option>
+            <option value="asia">Asia</option>
+            <option value="europe">Europe</option>
+            <option value="oceania">Oceania</option>
+          </select>
+        </div>
+        <div class="form__container">
+          <p class="form__label-text">Select journey preference</p>
+          <div class="form__preference">
+            <label class="form__preference__label">
+              <input type="radio" name="preference" value="sea">
+              Sea
+            </label>
+            <label class="form__preference__label">
+              <input type="radio" name="preference" value="mountain">
+              Mountain
+            </label>
+            <label class="form__preference__label">
+              <input type="radio" name="preference" value="desert">
+              Desert
+            </label>
+          </div>
+        </div>
+        <div class="form__container">
+          <p class="form__label-text">Check the landscapes that you want to see</p>
+          <div class="form__checkbox">
+            <label>
+              <input type="checkbox" value="lake">
+              Lake
+            </label>
+            <label>
+              <input type="checkbox" value="river">
+              River
+            </label>
+            <label>
+              <input type="checkbox" value="jungle">
+              Jungle
+            </label>
+            <label>
+              <input type="checkbox" value="forest">
+              Forest
+            </label>
+            <label>
+              <input type="checkbox" value="lake">
+              Rainforest
+            </label>
+            <label>
+              <input type="checkbox" value="lake">
+              Cliff
+            </label>
+            <label>
+              <input type="checkbox" value="lake">
+              Woodland
+            </label>
+            <label>
+              <input type="checkbox" value="coast">
+              Coast
+            </label>
+          </div>
+        </div>
+        <div class="form__container">
+          <label for="textarea" class="form__label-text">Write a comment about how you want in your travel</label>
+          <textarea name="textarea" id="textarea" class="form__insert-info"></textarea>
+        </div>
+        <div class="form__container">
+          <input type="submit" id="submit">
+        </div>
+      </form>
+    </main>
+    <footer class="footer">
+      <div class="footer__navigation">
+        <ul class="footer__list">
+          <li class="footer__item"><a href="#" class="footer__link">About</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Portfolio</a></li>
+        </ul>
+      </div>
+      <div class="copyright">Mandela Samboy. June 2020</div>
+    </footer>
+  </body>
+</html>
